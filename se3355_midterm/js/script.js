@@ -99,6 +99,13 @@ function validateAndSubmit() {
     if (city === "") {
         displayError("city", "Please select a city");
     }  
+
+    var selectedValue = document.getElementById("hours").value;
+
+      
+      if (selectedValue === "") {
+        displayError("hours", "Please choose a time interval");
+      }
     
     var checkbox = document.getElementById("flexCheckDefault");
     if (!checkbox.checked) {
