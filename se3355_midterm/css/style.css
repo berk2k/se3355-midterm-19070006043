@@ -1,0 +1,67 @@
+
+.custom-navbar-bg {
+    background-color: black; 
+    
+}
+
+.custom-navbar-bg .navbar-nav .nav-link {
+    color: #fff; 
+}
+
+.custom-navbar-bg .navbar-toggler-icon {
+    background-color: gray;
+}
+
+.content {
+    position: relative;
+}
+
+.bg-image{
+    
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .form h2 {
+        font-size: 1.2rem; 
+    }
+}
+
+.btn-primary {
+    margin-top: 10px; 
+}
+
+.form-group {
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    color: red; 
+    font-size: 0.8rem;
+   
+}
+
+
+
+

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE3355 Midterm</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="content">
+
+      <img src="../images/bg.jpg" class="bg-image" alt="bg image">
+      <div class="container">
+        <form class="form bg-light rounded p-4 row-g-3" id="Appointment-form" onsubmit="event.preventDefault(); validateAndSubmit()";>
+            <h2 class="form-control-md">Education Appointment Form</h2>
+            <div class="form-group mb-3">
+                
+              <input type="text" class="input-group" id="title" placeholder="Title">
+              <p id="title-error" class="error"></p>
+                  
+            </div>
+            <div class="form-group mb-3">
+                
+              <input type="text" class="input-group" id="name" placeholder="Your Name">
+              <p id="name-error" class="error"></p>
+                  
+            </div>
+            <div class="form-group mb-3">
+                
+                <input type="email" class="input-group" id="email-input" placeholder="Email">
+                <p id="email-input-error" class="error"></p>
+                
+            </div>
+
+            <div class="form-group mb-3">
+                
+              <input type="text" class="input-group" id="phone-number" placeholder="Phone number">  
+              <p id="phone-number-error" class="error"></p>
+            </div>
+
+            <div class="form-group mb-3">
+                
+              <select type="text" class="form-select" id="course-type">
+                 <option value="" disabled selected>Course Type:</option>
+              </select>
+              <p id="course-type-error" class="error"></p>
+            </div>
+            <div class="form-group mb-3">
+              <select type="text" class="form-select" id="city">
+                <option value="" disabled selected>City:</option>
+                
+              </select>
+              <p id="city-error" class="error"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <h4 class="form-control-sm">How would you like to be located?</h4>
+              <select type="text" class="form-select" id="located-type">
+                <option value="1" >By phone</option>
+                <option value="2" >By email</option>
+              </select>
+
+            </div>
+
+            <div class="form-group mb-3">
+              <select type="text" class="form-select" id="hours">
+                <option value="" disabled selected>Hours: 8am-10pm</option>
+                
+              </select>
+
+            </div>
+            
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              
+              <label class="form-check-label" for="flexCheckDefault">
+                I agree to the <a href="terms_and_condition.html" style="text-decoration: underline;">Terms and conditions</a>
+              </label>
+              <p id="flexCheckDefault-error" class="error"></p>
+            </div>
+
+            
+            <button type="submit" class="btn btn-primary">Request an Appointment</button>
+            
+        </form>
+      </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
+
